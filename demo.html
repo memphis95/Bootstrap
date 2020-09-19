@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<head>
+  <title>Containers</title>
+  <link href="bootstrap.css" rel="stylesheet" />
+  <style>
+    body {
+      font-size: large;
+      font-weight: bolder;
+    }
+    .container {
+      background-color: aqua;
+    }
+    .container-fluid {
+      background-color: burlywood;
+    }
+    .row {
+      border: 2px solid #cccccc;
+    }
+    .col-md-1 {
+      background-color: #f5f5f5;
+      border: 2px solid #cccccc;
+    }
+    .col-md-5 {
+      background-color: #f5f5f5;
+      border: 2px solid #cccccc;
+    }
+    .col-md-2 {
+      background-color: #f5f5f5;
+      border: 2px solid #cccccc;
+    }
+    .col-md-4 {
+      background-color: #f5f5f5;
+      border: 2px solid #cccccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="row">I am a row without a container</div>
+  <div class="col-md-1">column without row</div>
+
+  <div class="container">
+    I am div with class .container
+    <div class="row">I am a row inside .container</div>
+    <div class="row">
+      <div class="col-md-1">col 1</div>
+      <div class="col-md-5">col 5</div>
+      <div class="col-md-2">col 2</div>
+      <div class="col-md-4">col 4</div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    I am div with class .container-fluid
+    <div class="row">I am a row inside .container-fluid</div>
+    <div class="row">
+      <div class="col-md-1">col 1</div>
+      <div class="col-md-5">col 5</div>
+      <div class="col-md-2">col 2</div>
+      <div class="col-md-4">col 4</div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 offset-1">col 1</div>
+      <div class="col-md-2 offset-1">col 2</div>
+      <div class="col-md-2 offset-1">col 3</div>
+      <div class="col-md-2 offset-1">col 4</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <h1 style="margin: 15px">h1 Bootstrap(2.5rem = 40px)</h1>
+      <h2 style="margin: 15px">h2 Bootstrap(2rem = 32px)</h2>
+      <h3 style="margin: 15px">h3 bootstrap(1.75rem = 28px)</h3>
+      <h4 style="margin: 15px">h4 Bootstrap(1.5rem = 24px)</h4>
+      <h5 style="margin: 15px">h5 Bootstrap(1.25rem = 20px)</h5>
+      <h6 style="margin: 15px">h6 Bootstrap (1rem = 16px)</h6>
+      <h1 style="margin: 15px">Heading<small>Inline Sub Heading</small></h1>
+    </div>
+    <div class="col-md-4">
+      <h1 class="display-1">Display 1</h1>
+      <h1 class="display-2">Display 2</h1>
+      <h1 class="display-3">Display 3</h1>
+      <h1 class="display-4">Display 4</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <p class="text-left" style="margin: 15px">.text-left</p>
+      <p class="text-center" style="margin: 15px">.text-center</p>
+      <p class="text-right" style="margin: 15px">.text-right</p>
+      <p class="text-justify" style="margin: 15px">...</p>
+      <p></p>
+      <p></p>
+    </div>
+    <div class="col-md-4">
+      <p class="text-success" style="margin: 15px">I am a Success Text</p>
+      <p class="text-primary" style="margin: 15px">I am a Primary Text</p>
+      <p class="text-info" style="margin: 15px">I am a Info Text</p>
+      <p class="text-warning" style="margin: 15px">I am a Warning Text</p>
+      <p class="text-danger" style="margin: 15px">I am a Danger Text</p>
+      <p class="text-muted" style="margin: 15px">I am a Muted Text</p>
+       
+    </div>
+    <div class="col-md-4">
+      <p class="text-capitalize" style="margin: 15px">text capitalize</p>
+      <p class="text-uppercase" style="margin: 15px">text UPPERCASE</p>
+      <p class="text-lowercase" style="margin: 15px">TEXT lowercase</p>
+       
+    </div>
+  </div>
+  <div class="container-fluid">
+    <table class="table table-sm table-bordered table-hover">
+      <thead>
+        <tr>
+          <th>FirstName</th>
+          <th>LastName</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody style="background-color: chocolate">
+        <tr>
+          <td>Bruce</td>
+          <td>Wayne</td>
+          <td>Gotham City</td>
+        </tr>
+        <tr>
+          <td>Oliver</td>
+          <td>Queen</td>
+          <td>Star City</td>
+        </tr>
+        <tr>
+          <td>Barry</td>
+          <td>Allen</td>
+          <td>Central City</td>
+        </tr>
+        <tr>
+          <td>Ray</td>
+          <td>Palmer</td>
+          <td>Calvin City</td>
+        </tr>
+        <tr>
+          <td>Kara</td>
+          <td>Zor-El</td>
+          <td>National City</td>
+        </tr>
+        <tr>
+          <td>Hal</td>
+          <td>Zordan</td>
+          <td>Coast City</td>
+        </tr>
+        <tr>
+          <td>Clark</td>
+          <td>Kent</td>
+          <td>Smallvile</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <div class="card" style="margin: 15px">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h4 class="caed-title">Card Title</h4>
+        <p>The contents of the card here</p>
+      </div>
+      <div class="card-footer">Footer</div>
+    </div>
+    <div class="card bg-primary" ><div class="card-body">Primary card</div></div>
+    <div class="card bg-success"><div class="card-body">Success card</div></div>
+    <div class="card bg-info"><div class="card-body">Info card</div></div>
+    <div class="card bg-warning"><div class="card-body">Warning card</div></div>
+    <div class="card bg-danger"><div class="card-body">Danger card</div></div>
+    <div class="card bg-secondary">
+      <div class="card-body">Secondary card</div>
+    </div>
+    <div class="card bg-dark"><div class="card-body">Dark card</div></div>
+    <div class="card bg-light"><div class="card-body">Light card</div></div>
+
+    <div class="card">
+      <p>Image at the top(card-img-top)</p>
+      <img class="card-img-top" src="pic.jpg" alt="Card image" />
+      <div class="card-body">
+        <h4 class="card-title">Title</h4>
+        <p>Details about the card</p>
+        <a href="#" class="btn btn-primary">More Details</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <p>Image at the bottom (card-img-bottom)</p>
+      <div class="card-body">
+        <h4 class="card-title">Title</h4>
+        <p>Details about the card</p>
+        <a href="#" class="btn btn-primary">More Details</a>
+      </div>
+      <img class="card-img-bottom" src="pic.jpg" alt="card image" />
+    </div>
+
+    
+    <div class="card img-fluid">
+       
+        
+      <img class="card-img-top" src="pic.jpg" alt="card image" />
+      <p>Image in background (card-img-overlay)</p>
+    <div class="card-img-overlay">
+        <h4 class="card-title">Title</h4>
+        <p>Details about the card</p>
+        <a href="#" class="btn btn-primary">More Details</a>
+        
+    </div>
+      
+      </div>
+    </div>
+    <div class="card-deck">
+        <div class="card bg-primary">
+            <div class="card-body text-center">
+                <p class="card-text">Content of the first card</p>
+            </div>
+        </div>
+        <div class="card bg-info">
+            <div class="card-body text-center">
+                <p class="card-text">Content of the second card</p>
+            </div>
+        </div>
+        <div class="card bg-success">
+            <div class="card-body text-center">
+                <p class="card-text">Content of the third card</p>
+            </div>
+        </div>
+        <div class="card bg-warning">
+            <div class="card-body text-center">
+                <p class="card-text">Content of the fourth card</p>
+            </div>
+        </div> 
+    </div>
+
+  </div>
+</body>
